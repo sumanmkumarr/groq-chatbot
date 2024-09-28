@@ -723,7 +723,7 @@ async function sendMessage() {
 
         if (data && data.answer) {
             appendMessage("Bot", data.answer);
-            speakResponse(data.answer);  // Speak the AI's response
+            // speakResponse(data.answer);  // Speak the AI's response
         } else {
             appendMessage("Bot", "Sorry, I didn't understand that.");
         }
@@ -739,3 +739,11 @@ function speakResponse(text) {
     utterance.lang = 'en-US';
     synth.speak(utterance);
 }
+
+
+
+
+
+
+
+
